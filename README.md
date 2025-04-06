@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+</head>
 <body>
 
-<h1 align="center">Engenharia de Dados</h1>
+<h1 align="center">🏗️ Pipeline de Dados - Análise Histórica do Futebol de Seleções</h1>
 
 <p align="center">
-  <strong>Introdução:</strong> Esse repositório contém arquivos e datasets para construção de um pipeline de dados utilizando tecnologias na nuvem. É um MVP da Sprint Engenharia de Dados, referente à Pós-Graduação em Ciência de Dados e Analytics, da PUC-RJ.
+  <strong>Introdução:</strong> Este repositório contém os arquivos e scripts utilizados 
+  na construção de um pipeline de dados em nuvem, como parte do MVP da Sprint de 
+  Engenharia de Dados da Pós-Graduação em Ciência de Dados e Analytics da PUC-RJ.
 </p>
 
 <h2>📖 Projeto</h2>
 <p>
-    O trabalho presente neste repositório consiste na construção de um pipeline de dados utilizando tecnologias na nuvem para a solução de um problema, utilizando dados associados com informações referentes a usuários de uma academia de exercícios físicos (<em>Gym Members Exercise Dataset</em>). Esse dataset apresenta dados numéricos e categóricos de cada usuário.
+    O projeto consiste na construção de um pipeline de dados utilizando a plataforma 
+    Databricks Community, com foco na análise histórica da dominância das seleções 
+    nacionais masculinas de futebol. Os dados utilizados provêm de diferentes arquivos 
+    públicos do Kaggle, contendo informações sobre partidas internacionais, rankings da 
+    FIFA, marcadores de gols e disputas de pênaltis entre seleções, com registros que 
+    datam desde 1872 até os dias atuais.
 </p>
 <p>
-    O problema em questão consiste na construção de um modelo preditor para a quantidade de Calorias Queimadas por um usuário a partir de informações relativas aos hábitos e características físicas registradas. É um problema de aprendizado supervisionado e de regressão.
+    O objetivo principal é responder a perguntas relevantes sobre desempenho histórico 
+    das seleções, como a que mais venceu, a mais dominante em finais, rankings de 
+    artilheiros, maior invencibilidade, entre outros, por meio de um modelo estrela 
+    com tabelas na camada Gold.
 </p>
 <p>
-    Inicialmente é realizada uma análise exploratória dos dados, para entender a distribuição e possíveis correlações.
+    O pipeline foi estruturado segundo uma arquitetura em camadas: 
+    <strong>Bronze (dados brutos)</strong>, 
+    <strong>Silver (dados limpos e transformados)</strong> e 
+    <strong>Gold (modelo analítico dimensional)</strong>.
 </p>
 <p>
-    Após essa etapa, é realizada a construção do Modelo, com a divisão dos grupos de treino e teste, pré-processamento das variáveis categóricas, seleção dos melhores atributos para o modelo, treino de alguns modelos e com posterior comparação entre os mesmos através das métricas de avaliação definidas, seleção de hiperparâmetros para os modelos com melhor desempenho e teste dos modelos, com avaliações conclusivas a respeito do processo.
+    As principais etapas do projeto incluem:
 </p>
-<p>
-    Com o modelo definido, ele é treinado com todo o dataset e são inseridos novos dados para que o modelo preveja os resultados da variável alvo com base nessas entradas.
-</p>
+<ul>
+    <li>Ingestão dos arquivos CSV na camada Bronze;</li>
+    <li>Limpeza, padronização e integração dos dados na camada Silver;</li>
+    <li>Modelagem dimensional (modelo estrela) com tabelas fato e dimensões na camada Gold;</li>
+    <li>Construção de consultas SQL e visualizações para responder perguntas analíticas.</li>
+</ul>
+
 <h2>🚀 Execução do Projeto</h2>
 <p>
-    O projeto foi realizado utilizando a plataforma Databricks Community. Nela foram construídos notebooks e utilizado o ambiente própio em nuvem para amarzenas as tabelas para consulta. Os notebooks estão disponíveis no repositório e possuem todo o detalhamento do projeto com os scripts já executados.
+    Todo o projeto foi executado na plataforma Databricks Community, com notebooks em Python 
+    e SQL hospedados na nuvem. Os scripts estão organizados no repositório em ordem lógica, 
+    desde a ingestão até a análise final. As tabelas foram armazenadas em formato Delta no 
+    metastore do Databricks.
 </p>
 
 <h2>💻 Tecnologias</h2>
 <p>
-    Foi utilizada a linguagem Python na construção do projeto e a linguagem SQL para consulta, com suas respectivas bibliotecas importadas para execução de diferentes funcionalidades.
+    <strong>Principais ferramentas utilizadas:</strong>
 </p>
+<ul>
+    <li>🔹 Databricks Community</li>
+    <li>🔹 Apache Spark (PySpark e Spark SQL)</li>
+    <li>🔹 Python</li>
+    <li>🔹 SQL</li>
+    <li>🔹 Delta Lake</li>
+    <li>🔹 Pandas, Matplotlib, Seaborn (para análises locais e visualizações complementares)</li>
+</ul>
 
 <h2>🧑‍💻 Autor</h2>
 <p>
@@ -45,7 +73,10 @@
 
 <h2>📄 Licença</h2>
 <p>
-    Feito por Marcel Antonio Lopes Pereira. Entre em contato!(www.linkedin.com/in/marcel-lopes-7a292b124)
+    Feito por Marcel Antonio Lopes Pereira. Entre em contato!<br>
+    <a href="https://www.linkedin.com/in/marcel-lopes-7a292b124" target="_blank">
+        www.linkedin.com/in/marcel-lopes-7a292b124
+    </a>
 </p>
 
 </body>
