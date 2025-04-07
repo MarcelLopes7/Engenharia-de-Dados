@@ -9,7 +9,7 @@
 <h1 align="center">🏗️ Pipeline de Dados - Análise Histórica do Futebol de Seleções</h1>
 
 <p align="center">
-  <strong>Introdução:</strong> Este repositório contém os arquivos e scripts utilizados 
+  <strong>Introdução:</strong> Este repositório contém os arquivos e notebooks utilizados 
   na construção de um pipeline de dados em nuvem, como parte do MVP da Sprint de 
   Engenharia de Dados da Pós-Graduação em Ciência de Dados e Analytics da PUC-RJ.
 </p>
@@ -48,7 +48,7 @@
 <h2>🚀 Execução do Projeto</h2>
 <p>
     Todo o projeto foi executado na plataforma Databricks Community, com notebooks em Python 
-    e SQL hospedados na nuvem. Os scripts estão organizados no repositório em ordem lógica, 
+    e SQL. Os scripts estão organizados no repositório em ordem lógica, 
     desde a ingestão até a análise final. As tabelas foram armazenadas em formato Delta no 
     metastore do Databricks.
 </p>
