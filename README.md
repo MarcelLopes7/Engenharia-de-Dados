@@ -48,9 +48,10 @@
 <h2>🚀 Execução do Projeto</h2>
 <p>
     Todo o projeto foi executado na plataforma Databricks Community, com notebooks em Python 
-    e SQL. Os scripts estão organizados no repositório em ordem lógica, 
-    desde a ingestão até a análise final. As tabelas foram armazenadas em formato Delta no 
-    metastore do Databricks.
+    e SQL. Os notebooks com todo o roteiro do trabalho estão organizados no repositório. O notebook "MVP 
+    - Engeharia de Dados - parte 1" contém a introdução, busca e coleta dos dados, além da construção do
+    pipeline. O notebook "MVP - Engenharia de Dados - parte 2 - Análise e Solução do Problema" contém as
+    respostas para as perguntas do problema e análises conclusivas do trabalho.
 </p>
 
 <h2>💻 Tecnologias</h2>
