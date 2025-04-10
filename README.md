@@ -59,12 +59,12 @@
     <strong>Principais ferramentas utilizadas:</strong>
 </p>
 <ul>
-    🔹 Databricks Community</li>
-    🔹 Apache Spark (PySpark e Spark SQL)</li>
-    🔹 Python</li>
-    🔹 SQL</li>
-    🔹 Delta Lake</li>
-    🔹 Pandas, Matplotlib, Seaborn (para análises locais e visualizações complementares)</li>
+    <i> Databricks Community</li>
+    <i> Apache Spark (PySpark e Spark SQL)</li>
+    <i> Python</li>
+    <i> SQL</li>
+    <i> Delta Lake</li>
+    <i> Pandas, Matplotlib, Seaborn (para análises locais e visualizações complementares)</li>
 </ul>
 
 <h2>🧑‍💻 Autor</h2>
